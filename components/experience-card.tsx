@@ -5,12 +5,13 @@ export interface ExperienceCardProps {
   designation: string;
   company: string;
   link: string;
+  project?: string;
   duration: string;
   contentList: string[];
 }
 
 export function ExperienceCard(props: ExperienceCardProps) {
-  const { designation, company, duration, link, contentList } = props;
+  const { designation, company, duration, link, project, contentList } = props;
   return (
     <div className=" p-8 rounded-lg border">
       <div className="flex flex-col gap-2">
@@ -28,6 +29,7 @@ export function ExperienceCard(props: ExperienceCardProps) {
           <div className="font-semibold">{duration}</div>
         </div>
         <div>
+          <div>Project: {project}</div>
           <ul className="list-disc px-6">
             {contentList.map((content, index) => (
               <li key={index}>{content}</li>

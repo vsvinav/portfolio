@@ -14,6 +14,7 @@ const experiences: ExperienceCardProps[] = [
     link: "https://www.juniper.net/",
     company: "Juniper Networks",
     duration: "2021-2023",
+    project: "Paragon Automation",
     contentList: [
       "Developed one Python and 2 GoLang microservices on Kubernetes for Paragon Automation, a cloud-native network solution",
       "Served as an SME and oversaw a critical microservice managing trigger and alert executions, from development to deployment",
@@ -26,84 +27,64 @@ const experiences: ExperienceCardProps[] = [
     company: "HashedIn by Deloitte",
     link: "https://www.hashedin.com/",
     duration: "2021-2021",
+    project:  "Lockheed Martin",
     contentList: [
-      "Developed a Python microservice for Paragon Automation, a cloud-native network solution",
-      "Collaborated on migrating the product from on-prem architecture to the cloud with Kafka, boosting scalability and performance",
-      "Developed a GoLang Resource Recommendation Engine with supervised learning, eliminating 100% of manual rule selections",
+      "Led data-driven efforts as an ML engineer, reducing manual tracking by 50%, and providing real-time equipment test updates",
+      "Directed Python backend, architecting 8 serverless RESTful APIs with AWS services: API Gateway, Lambda, Glue, Step Functions",
+      "Gathered critical client requirements and domain insights, ensuring communication, project alignment, and success",
     ],
   },
   {
-    designation: "Software Engineer Intern",
-    company: "Juniper Networks",
-    duration: "2018-2019",
-    link: "https://www.juniper.net/",
+    designation: "Software Development Engineer",
+    company: "HashedIn by Deloitte",
+    duration: "2019-2022",
+    link: "https://www.hashedin.com/",
+    project: "AI-based Stock Market Alpha Forecasting",
     contentList: [
-      "Developed a Python microservice for Paragon Automation, a cloud-native network solution",
-      "Collaborated on migrating the product from on-prem architecture to the cloud with Kafka, boosting scalability and performance",
-      "Developed a GoLang Resource Recommendation Engine with supervised learning, eliminating 100% of manual rule selections",
+      "Engineered a model achieving 30% Excess Returns in FY 2020 and 97.38% over four years from 2017 for the Russell 1000 index",
+      "Directed end-to-end ML workflows, including feature engineering, LSTM model development, hyperparameter optimization, and rigorous model training. Implemented an automated data pipeline cron jobs, attaining 100% elimination of manual intervention",
+      "Delivered 7 backend APIs, including Prediction Visualization, Stocks Ranking, and Portfolio Building to boost functionality & UX",
+      "Executed, managed, and mentored 3 interns in transfer learning techniques with additional data to update existing models"
     ],
   },
 ];
 
 const projects: ProjectCardProps[] = [
   {
-    title: "Paragon Automation",
-    description: "A cloud-native network solution",
-    link: "https://www.juniper.net/",
-    technologies: ["Python", "GoLang", "Kubernetes", "Kafka"],
+    title: "Image Manipulation Tool",
+    description: "A Java Image Manipulation Tool with format support, filters, and histogram analysis. Utilizing object-oriented principles, it offers extensible image editing through a command-line or graphical interface.",
+    technologies: ["Java"],
   },
   {
-    title: "Paragon Automation",
-    description: "A cloud-native network solution",
-    link: "https://www.juniper.net/",
+    title: "KeyMatrix - AI in Security",
+    description: "A keystroke dynamics-based password authenticator with TensorFlow 2.0 and one-shot learning, utilizing CMU's Keystroke Dynamics - Benchmark Dataset to reliably capture a user's unique typing pattern bolstering login security",
+    technologies: ["One Shot Learning", "Deep Learning", "Tensorflow", "Python", "Jupyter"]
   },
   {
-    title: "Paragon Automation",
-    description: "A cloud-native network solution",
-    link: "https://www.juniper.net/",
+    title: "Smart Home Automation System",
+    description: "A voice-controlled home automation system using Raspberry Pi, Relay, Android, and PHP to remotely control all devices and create routines, ensuring 100% connectivity and complete user convenience",
+    technologies: ["Android", "PHP", "HTML", "Java"]
   },
   {
-    title: "Paragon Automation",
-    description: "A cloud-native network solution",
-    link: "https://www.juniper.net/",
-  },
-  {
-    title: "Paragon Automation",
-    description: "A cloud-native network solution",
-    link: "https://www.juniper.net/",
-  },
-  {
-    title: "Paragon Automation",
-    description: "A cloud-native network solution",
-    link: "https://www.juniper.net/",
-  },
+    title: "Spotify Ad-Free App",
+    description: "Spotify Ad Free app to optimize user experience by customizing the interface within Spotify's terms of service, ensuring a seamless and ad-free listening environment.",
+    technologies: ["Python", "Linux - Dbus"]
+  }
 ];
 
 const education = [
   {
-    school: "University of California, Irvine",
+    school: "Northeastern University, Khoury College of Computer Sciences",
     degree: "Master of Science in Computer Science",
-    duration: "2019-2021",
-    gpa: "3.9",
+    duration: "2023-2025",
+    gpa: "GPA: 4.0",
   },
   {
-    school: "University of California, Irvine",
-    degree: "Master of Science in Computer Science",
-    duration: "2019-2021",
-    gpa: "3.9",
-  },
-  {
-    school: "University of California, Irvine",
-    degree: "Master of Science in Computer Science",
-    duration: "2019-2021",
-    gpa: "3.9",
-  },
-  {
-    school: "University of California, Irvine",
-    degree: "Master of Science in Computer Science",
-    duration: "2019-2021",
-    gpa: "3.9",
-  },
+    school: "SRM Institute of Science and Technology",
+    degree: "Bachelors in Information Technology",
+    duration: "2015-2019",
+    gpa: "Score: 86.4%",
+  }
 ];
 
 const skills = [
