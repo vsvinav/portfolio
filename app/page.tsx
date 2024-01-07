@@ -153,7 +153,7 @@ export default function Home() {
           >
             <GitHubLogoIcon className="h-10 w-10" />
           </Link>
-          <Link href={"github.com/vsvinav"} className=" p-2 border rounded-lg">
+          <Link href={"https://linkedin.com/in/vinav-singh-sancheti/"} className=" p-2 border rounded-lg">
             <LinkedInLogoIcon className="h-10 w-10" />
           </Link>
         </div>
