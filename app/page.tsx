@@ -16,6 +16,7 @@ const experiences: ExperienceCardProps[] = [
     duration: "2021-2023",
     project: "Paragon Automation",
     contentList: [
+      "Created a Causal-inference-based Root Cause Analysis framework to identify and improve network failure prediction by 87%",
       "Developed one Python and 2 GoLang microservices on Kubernetes for Paragon Automation, a cloud-native network solution",
       "Served as an SME and oversaw a critical microservice managing trigger and alert executions, from development to deployment",
       "Collaborated on migrating the product from on-prem architecture to the cloud with Kafka, boosting scalability and performance",
