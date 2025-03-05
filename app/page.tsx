@@ -10,10 +10,22 @@ import Link from "next/link";
 
 const experiences: ExperienceCardProps[] = [
   {
+    designation: "Software Engineering Intern",
+    link: "https://www.juniper.net/",
+    company: "Juniper Networks",
+    duration: "May 2024 - Aug 2024",
+    project: "Paragon Automation",
+    contentList: [
+      "Implemented IPv6 support across 10+ microservices, enhancing compatibility and connectivity for Paragon Automation",
+      "Developed 2 SDKs in Python and GoLang for Paragon Automation, enhancing API integration",
+      "Created a SQLite connector in GoLang, extending compatibility with Postgres and ArangoDB, supporting 3 databases",
+    ],
+  },
+  {
     designation: "Software Engineer 2",
     link: "https://www.juniper.net/",
     company: "Juniper Networks",
-    duration: "2021-2023",
+    duration: "Aug 2021 - Aug 2023",
     project: "Paragon Automation",
     contentList: [
       "Created a Causal-inference-based Root Cause Analysis framework to identify and improve network failure prediction by 87%",
@@ -27,7 +39,7 @@ const experiences: ExperienceCardProps[] = [
     designation: "Software Development Engineer II",
     company: "HashedIn by Deloitte",
     link: "https://www.hashedin.com/",
-    duration: "2021-2021",
+    duration: "Jan 2021 - Aug 2021",
     project:  "Lockheed Martin",
     contentList: [
       "Led data-driven efforts as an ML engineer, reducing manual tracking by 50%, and providing real-time equipment test updates",
@@ -38,7 +50,7 @@ const experiences: ExperienceCardProps[] = [
   {
     designation: "Software Development Engineer",
     company: "HashedIn by Deloitte",
-    duration: "2019-2022",
+    duration: "Feb 2019 - Jan 2021",
     link: "https://www.hashedin.com/",
     project: "AI-based Stock Market Alpha Forecasting",
     contentList: [
@@ -52,19 +64,19 @@ const experiences: ExperienceCardProps[] = [
 
 const projects: ProjectCardProps[] = [
   {
-    title: "Image Manipulation Tool",
-    description: "A Java Image Manipulation Tool with format support, filters, and histogram analysis. Utilizing object-oriented principles, it offers extensible image editing through a command-line or graphical interface.",
-    technologies: ["Java"],
-  },
-  {
     title: "KeyMatrix - AI in Security",
     description: "A keystroke dynamics-based password authenticator with TensorFlow 2.0 and one-shot learning, utilizing CMU's Keystroke Dynamics - Benchmark Dataset to reliably capture a user's unique typing pattern bolstering login security",
     technologies: ["One Shot Learning", "Deep Learning", "Tensorflow", "Python", "Jupyter"]
   },
   {
-    title: "Smart Home Automation System",
-    description: "A voice-controlled home automation system using Raspberry Pi, Relay, Android, and PHP to remotely control all devices and create routines, ensuring 100% connectivity and complete user convenience",
-    technologies: ["Android", "PHP", "HTML", "Java"]
+    title: "Mouse Dynamics-Based User Authentication",
+    description: "A mouse dynamics-based user authenticator using TensorFlow 2.0 and Siamese networks, leveraging The DFL Mouse Dynamics Data Set to capture unique movement patterns for enhanced login security",
+    technologies: ["One Shot Learning", "Deep Learning", "Tensorflow", "Python", "Jupyter"]
+  },
+  {
+    title: "Image Manipulation Tool",
+    description: "A Java based Image Manipulation Tool with format support, filters, and histogram analysis. Utilizing object-oriented principles, it offers extensible image editing through a command-line or graphical interface.",
+    technologies: ["Java"],
   },
   {
     title: "Spotify Ad-Free App",
@@ -78,13 +90,13 @@ const education = [
     school: "Northeastern University, Khoury College of Computer Sciences",
     degree: "Master of Science in Computer Science",
     duration: "2023-2025",
-    gpa: "GPA: 4.0",
+    // gpa: "GPA: 4.0",
   },
   {
     school: "SRM Institute of Science and Technology",
     degree: "Bachelors in Information Technology",
     duration: "2015-2019",
-    gpa: "Score: 86.4%",
+    // gpa: "Score: 86.4%",
   }
 ];
 
@@ -102,7 +114,7 @@ const skills = [
     iconUrl: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg",
   },
   {
-    label: "Kafka",
+    label: "Apache Kafka",
     iconUrl:
       "https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg",
   },
@@ -116,7 +128,7 @@ const skills = [
   },
   {
     label: "C++",
-    iconUrl: "https://www.vectorlogo.zone/logos/w3_cpp/w3_cpp-icon.svg",
+    iconUrl: "https://www.vectorlogo.zone/logos/isocpp/isocpp-icon.svg",
   },
 
   {
@@ -131,6 +143,10 @@ const skills = [
     label: "Amazon Web Services",
     iconUrl: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
   },
+  {
+    label: "Linux",
+    iconUrl: "https://www.vectorlogo.zone/logos/linux/linux-icon.svg",
+  }
 ];
 
 export default function Home() {
@@ -173,7 +189,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section id="eduction" className="flex flex-col gap-4">
+      <section id="education" className="flex flex-col gap-4">
         <div className="text-5xl font-bold">Education</div>
         <div className="grid grid-cols-1 gap-4">
           {education.map((education, index) => (
