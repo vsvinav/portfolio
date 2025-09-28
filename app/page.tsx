@@ -10,6 +10,17 @@ import Link from "next/link";
 
 const experiences: ExperienceCardProps[] = [
   {
+    designation: "Software Engineer 3",
+    link: "https://www.juniper.net/",
+    company: "Juniper Networks",
+    duration: "Jun 2025 - Present",
+    project: "Paragon Automation",
+    contentList: [
+      "Designed and implemented a geo-distributed, high-availability telemetry pipeline on VictoriaMetrics with dual-write ingestion and global read failover, ensuring seamless regional resilience and scalability",
+      "Built an LLM-driven LangGraph pipeline that auto-generates OpenConfig telemetry rules and Junos iAgent schemas from user intent and device XML, enabling scalable observability automation"
+    ],
+  },
+  {
     designation: "Software Engineering Intern",
     link: "https://www.juniper.net/",
     company: "Juniper Networks",
@@ -110,6 +121,10 @@ const skills = [
     iconUrl: "https://www.vectorlogo.zone/logos/golang/golang-icon.svg",
   },
   {
+    label: "Docker",
+    iconUrl: "https://www.vectorlogo.zone/logos/docker/docker-icon.svg",
+  },
+  {
     label: "Kubernetes",
     iconUrl: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg",
   },
@@ -117,6 +132,10 @@ const skills = [
     label: "Apache Kafka",
     iconUrl:
       "https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg",
+  },
+  {
+    label: "Langchain",
+    iconUrl: "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/langchain-ipuhh4qo1jz5ssl4x0g2a.png/langchain-dp1uxj2zn3752pntqnpfu2.png?_a=DATAg1AAZAA0",
   },
   {
     label: "Tensorflow",
@@ -134,6 +153,10 @@ const skills = [
   {
     label: "SQL",
     iconUrl: "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg",
+  },
+  {
+    label: "Django",
+    iconUrl: "https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg",
   },
   {
     label: "Java",
@@ -159,7 +182,7 @@ export default function Home() {
         </div>
         <div className="text-lg">
           My name is Vinav, and I&apos;m a Software Developer specializing in
-          AI, ML, and Cloud Technologies. I excel in crafting innovative
+          System Design, AI, ML, and Cloud Technologies. I excel in crafting innovative
           solutions to complex challenges, driving impactful outcomes.
         </div>
         <div className="flex gap-2">
