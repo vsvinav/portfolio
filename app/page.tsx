@@ -12,7 +12,7 @@ const experiences: ExperienceCardProps[] = [
   {
     designation: "Software Engineer 3",
     link: "https://www.juniper.net/",
-    company: "Juniper Networks",
+    company: "HPE Juniper Networks",
     duration: "Jun 2025 - Present",
     project: "Paragon Automation",
     contentList: [
